@@ -11,7 +11,7 @@ app.use((req, res, next) => {
   next()
 })
 
-app.use(workoutRoutes)
+app.use('/api/workouts', workoutRoutes)
 
 app.listen(process.env.PORT, () => {
   console.log('Listening on port 4000')
